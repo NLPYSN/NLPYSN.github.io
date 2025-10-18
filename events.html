@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Upcoming events, workshops, and seminars at the Young Scholar Network - NLP@U Utrecht University.">
+    <meta name="keywords" content="NLP Events, Workshops, Seminars, Utrecht University, Research Events">
+
+    <title>Events | Young Scholar Network - NLP@U Utrecht</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="icon" type="image/png" href="assets/images/ysn-logo.jpg">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="assets/images/ysn-logo.jpg" alt="YSN Logo" class="nav__logo-img">
+                <div class="nav__logo-text">
+                    <span class="nav__logo-title">NLP@U</span>
+                    <span class="nav__logo-subtitle">Young Scholar Network</span>
+                </div>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="events.html" class="nav__link active">Events</a></li>
+                    <li class="nav__item"><a href="members.html" class="nav__link">Members</a></li>
+                    <li class="nav__item"><a href="resources.html" class="nav__link">Resources</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link nav__link--cta">Join Us</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-header__title">Events & Activities</h1>
+            <p class="page-header__subtitle">
+                Join our workshops, seminars, and networking events
+            </p>
+        </div>
+    </section>
+
+    <!-- Event Types Section -->
+    <section class="event-types">
+        <div class="container">
+            <div class="event-types__grid">
+                <div class="event-type">
+                    <div class="event-type__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="event-type__title">Reading Groups</h3>
+                    <p class="event-type__description">Weekly discussions of recent NLP papers</p>
+                </div>
+
+                <div class="event-type">
+                    <div class="event-type__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        </svg>
+                    </div>
+                    <h3 class="event-type__title">Workshops</h3>
+                    <p class="event-type__description">Hands-on training in NLP tools and techniques</p>
+                </div>
+
+                <div class="event-type">
+                    <div class="event-type__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="event-type__title">Seminars</h3>
+                    <p class="event-type__description">Guest lectures from leading researchers</p>
+                </div>
+
+                <div class="event-type">
+                    <div class="event-type__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                            <line x1="9" y1="9" x2="9.01" y2="9"/>
+                            <line x1="15" y1="9" x2="15.01" y2="9"/>
+                        </svg>
+                    </div>
+                    <h3 class="event-type__title">Social Events</h3>
+                    <p class="event-type__description">Networking and community building activities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="events-upcoming">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Upcoming Events</h2>
+                <p class="section__subtitle">Mark your calendar for these exciting activities</p>
+            </div>
+
+            <div class="events__grid">
+                <!-- Event 1 -->
+                <div class="event-card event-card--featured">
+                    <div class="event-card__badge">Featured</div>
+                    <div class="event-card__date">
+                        <span class="event-card__day">15</span>
+                        <span class="event-card__month">May</span>
+                    </div>
+                    <div class="event-card__content">
+                        <span class="event-card__category">Workshop</span>
+                        <h3 class="event-card__title">
+                            Introduction to Large Language Models
+                        </h3>
+                        <p class="event-card__description">
+                            A hands-on workshop covering the fundamentals of LLMs, including architecture,
+                            training techniques, and practical applications in NLP research.
+                        </p>
+                        <div class="event-card__meta">
+                            <span class="event-card__time">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                14:00 - 17:00
+                            </span>
+                            <span class="event-card__location">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                Room 2.14, Janskerkhof 13
+                            </span>
+                        </div>
+                        <a href="contact.html" class="btn btn--small btn--primary">Register</a>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="event-card">
+                    <div class="event-card__date">
+                        <span class="event-card__day">22</span>
+                        <span class="event-card__month">May</span>
+                    </div>
+                    <div class="event-card__content">
+                        <span class="event-card__category">Seminar</span>
+                        <h3 class="event-card__title">
+                            Ethics in NLP: Challenges and Solutions
+                        </h3>
+                        <p class="event-card__description">
+                            Guest lecture exploring ethical considerations in NLP research, including bias,
+                            fairness, and responsible AI development.
+                        </p>
+                        <div class="event-card__meta">
+                            <span class="event-card__time">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                16:00 - 17:30
+                            </span>
+                            <span class="event-card__location">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                Online (Zoom)
+                            </span>
+                        </div>
+                        <a href="contact.html" class="btn btn--small btn--secondary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="event-card">
+                    <div class="event-card__date">
+                        <span class="event-card__day">05</span>
+                        <span class="event-card__month">Jun</span>
+                    </div>
+                    <div class="event-card__content">
+                        <span class="event-card__category">Reading Group</span>
+                        <h3 class="event-card__title">
+                            Recent Advances in Multimodal NLP
+                        </h3>
+                        <p class="event-card__description">
+                            Discussion of cutting-edge papers on multimodal language models and
+                            vision-language integration techniques.
+                        </p>
+                        <div class="event-card__meta">
+                            <span class="event-card__time">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                15:00 - 16:30
+                            </span>
+                            <span class="event-card__location">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                Trans 10, Room 0.19
+                            </span>
+                        </div>
+                        <a href="contact.html" class="btn btn--small btn--secondary">Join Discussion</a>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="event-card">
+                    <div class="event-card__date">
+                        <span class="event-card__day">12</span>
+                        <span class="event-card__month">Jun</span>
+                    </div>
+                    <div class="event-card__content">
+                        <span class="event-card__category">Social</span>
+                        <h3 class="event-card__title">
+                            YSN Summer Networking Mixer
+                        </h3>
+                        <p class="event-card__description">
+                            Join us for an informal gathering to connect with fellow researchers,
+                            share experiences, and enjoy refreshments.
+                        </p>
+                        <div class="event-card__meta">
+                            <span class="event-card__time">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                17:30 - 20:00
+                            </span>
+                            <span class="event-card__location">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                Utrecht Science Park
+                            </span>
+                        </div>
+                        <a href="contact.html" class="btn btn--small btn--secondary">RSVP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Events Section -->
+    <section class="events-past">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Past Events</h2>
+                <p class="section__subtitle">Highlights from our previous activities</p>
+            </div>
+
+            <div class="past-events__timeline">
+                <div class="timeline-item">
+                    <div class="timeline-item__date">March 2025</div>
+                    <div class="timeline-item__content">
+                        <h3 class="timeline-item__title">
+                            ACL 2025 Paper Writing Workshop
+                        </h3>
+                        <p class="timeline-item__description">
+                            Intensive workshop on academic writing for ACL, featuring feedback sessions
+                            and best practices from experienced researchers.
+                        </p>
+                        <span class="timeline-item__tag">Workshop</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-item__date">February 2025</div>
+                    <div class="timeline-item__content">
+                        <h3 class="timeline-item__title">
+                            NLP Career Paths Panel Discussion
+                        </h3>
+                        <p class="timeline-item__description">
+                            Panel featuring NLP professionals from academia and industry sharing insights
+                            on various career trajectories.
+                        </p>
+                        <span class="timeline-item__tag">Seminar</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-item__date">January 2025</div>
+                    <div class="timeline-item__content">
+                        <h3 class="timeline-item__title">
+                            Deep Learning for NLP Bootcamp
+                        </h3>
+                        <p class="timeline-item__description">
+                            Three-day intensive bootcamp covering neural architectures, transformers,
+                            and state-of-the-art NLP models.
+                        </p>
+                        <span class="timeline-item__tag">Workshop</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-item__date">December 2024</div>
+                    <div class="timeline-item__content">
+                        <h3 class="timeline-item__title">
+                            Year-End Celebration & Poster Session
+                        </h3>
+                        <p class="timeline-item__description">
+                            Annual gathering featuring poster presentations from YSN members and
+                            celebration of the year's achievements.
+                        </p>
+                        <span class="timeline-item__tag">Social</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Don't Miss Out</h2>
+                <p class="cta__description">
+                    Join YSN to receive updates about upcoming events and exclusive opportunities
+                    for professional development and networking.
+                </p>
+                <a href="contact.html" class="btn btn--primary btn--large">Join the Network</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__section">
+                    <div class="footer__logo">
+                        <img src="assets/images/ysn-logo.jpg" alt="YSN Logo" class="footer__logo-img">
+                        <div class="footer__logo-text">
+                            <span class="footer__logo-title">NLP@U</span>
+                            <span class="footer__logo-subtitle">Young Scholar Network</span>
+                        </div>
+                    </div>
+                    <p class="footer__description">
+                        Empowering early-career researchers in Natural Language Processing
+                        at Utrecht University, Netherlands.
+                    </p>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="about.html">About YSN</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Connect</h3>
+                    <ul class="footer__links">
+                        <li><a href="contact.html">Join Us</a></li>
+                        <li><a href="mailto:h.mohamamdi@uu.nl">Contact</a></li>
+                        <li><a href="https://www.uu.nl/en" target="_blank">Utrecht University</a></li>
+                        <li><a href="https://github.com/NLP-YSN" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Contact</h3>
+                    <p class="footer__contact">
+                        <strong>Email:</strong><br>
+                        <a href="mailto:h.mohamamdi@uu.nl">h.mohamamdi@uu.nl</a>
+                    </p>
+                    <p class="footer__contact">
+                        <strong>Location:</strong><br>
+                        Utrecht University<br>
+                        Utrecht, Netherlands
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2025 Young Scholar Network - NLP@U Utrecht University. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

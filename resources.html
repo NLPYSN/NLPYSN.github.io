@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curated resources for NLP researchers - tools, datasets, papers, and learning materials at YSN Utrecht.">
+    <meta name="keywords" content="NLP Resources, Datasets, Tools, Papers, Learning Materials, Research">
+
+    <title>Resources | Young Scholar Network - NLP@U Utrecht</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="icon" type="image/png" href="assets/images/ysn-logo.jpg">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="assets/images/ysn-logo.jpg" alt="YSN Logo" class="nav__logo-img">
+                <div class="nav__logo-text">
+                    <span class="nav__logo-title">NLP@U</span>
+                    <span class="nav__logo-subtitle">Young Scholar Network</span>
+                </div>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="events.html" class="nav__link">Events</a></li>
+                    <li class="nav__item"><a href="members.html" class="nav__link">Members</a></li>
+                    <li class="nav__item"><a href="resources.html" class="nav__link active">Resources</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link nav__link--cta">Join Us</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-header__title">Resources</h1>
+            <p class="page-header__subtitle">
+                Curated tools, datasets, and materials for NLP research
+            </p>
+        </div>
+    </section>
+
+    <!-- Resource Categories -->
+    <section class="resource-categories">
+        <div class="container">
+            <div class="resource-nav">
+                <button class="resource-nav__btn active" data-category="all">All Resources</button>
+                <button class="resource-nav__btn" data-category="tools">Tools & Libraries</button>
+                <button class="resource-nav__btn" data-category="datasets">Datasets</button>
+                <button class="resource-nav__btn" data-category="learning">Learning</button>
+                <button class="resource-nav__btn" data-category="papers">Papers</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Libraries Section -->
+    <section class="resources-section" id="tools">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Tools & Libraries</h2>
+                <p class="section__subtitle">Essential frameworks and libraries for NLP research</p>
+            </div>
+
+            <div class="resources__grid">
+                <div class="resource-card" data-category="tools">
+                    <div class="resource-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3 class="resource-card__title">Hugging Face Transformers</h3>
+                    <p class="resource-card__description">
+                        State-of-the-art Natural Language Processing library with pre-trained models
+                        and easy-to-use APIs.
+                    </p>
+                    <div class="resource-card__tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Transformers</span>
+                    </div>
+                    <a href="https://huggingface.co/transformers/" target="_blank" class="resource-card__link">
+                        Visit Resource →
+                    </a>
+                </div>
+
+                <div class="resource-card" data-category="tools">
+                    <div class="resource-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3 class="resource-card__title">spaCy</h3>
+                    <p class="resource-card__description">
+                        Industrial-strength Natural Language Processing library with support for
+                        50+ languages and production-ready models.
+                    </p>
+                    <div class="resource-card__tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">NER</span>
+                    </div>
+                    <a href="https://spacy.io/" target="_blank" class="resource-card__link">
+                        Visit Resource →
+                    </a>
+                </div>
+
+                <div class="resource-card" data-category="tools">
+                    <div class="resource-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                            <polyline points="2 17 12 22 22 17"/>
+                            <polyline points="2 12 12 17 22 12"/>
+                        </svg>
+                    </div>
+                    <h3 class="resource-card__title">PyTorch</h3>
+                    <p class="resource-card__description">
+                        Deep learning framework with strong GPU acceleration and dynamic computation
+                        graphs, ideal for NLP research.
+                    </p>
+                    <div class="resource-card__tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Deep Learning</span>
+                    </div>
+                    <a href="https://pytorch.org/" target="_blank" class="resource-card__link">
+                        Visit Resource →
+                    </a>
+                </div>
+
+                <div class="resource-card" data-category="tools">
+                    <div class="resource-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                    </div>
+                    <h3 class="resource-card__title">NLTK</h3>
+                    <p class="resource-card__description">
+                        Natural Language Toolkit providing easy-to-use interfaces and comprehensive
+                        documentation for NLP tasks.
+                    </p>
+                    <div class="resource-card__tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Toolkit</span>
+                    </div>
+                    <a href="https://www.nltk.org/" target="_blank" class="resource-card__link">
+                        Visit Resource →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Datasets Section -->
+    <section class="resources-section" id="datasets">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Datasets</h2>
+                <p class="section__subtitle">High-quality datasets for training and evaluation</p>
+            </div>
+
+            <div class="resources__grid">
+                <div class="resource-card" data-category="datasets">
+                    <div class="resource-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3 class="resource-card__title">Hugging Face Datasets</h3>
+                    <p class="resource-card__description">
+                        Access thousands of ready-to-use NLP datasets with unified interface and
+                        efficient processing capabilities.
+                    </p>
+                    <div class="resource-card__tags">
+                        <span class="tag">Multi-task</span>
+                        <span class="tag">Large-scale</span>
+                    </div>
+                    <a href="https://huggingface.co/datasets" target="_blank" class="resource-card__link">
+                        Visit Resource →
+                    </a>
+                </div>
+
+                <div class="resource-card" data-category="datasets">
+                    <div class="resource-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="resource-card__title">Common Crawl</h3>
+                    <p class="resource-card__description">
+                        Open repository of web crawl data containing billions of web pages,
+                        ideal for large-scale language modeling.
+                    </p>
+                    <div class="resource-card__tags">
+                        <span class="tag">Web Data</span>
+                        <span class="tag">Massive</span>
+                    </div>
+                    <a href="https://commoncrawl.org/" target="_blank" class="resource-card__link">
+                        Visit Resource →
+                    </a>
+                </div>
+
+                <div class="resource-card" data-category="datasets">
+                    <div class="resource-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="resource-card__title">SQuAD</h3>
+                    <p class="resource-card__description">
+                        Stanford Question Answering Dataset - benchmark for reading comprehension
+                        with 100,000+ question-answer pairs.
+                    </p>
+                    <div class="resource-card__tags">
+                        <span class="tag">QA</span>
+                        <span class="tag">Benchmark</span>
+                    </div>
+                    <a href="https://rajpurkar.github.io/SQuAD-explorer/" target="_blank" class="resource-card__link">
+                        Visit Resource →
+                    </a>
+                </div>
+
+                <div class="resource-card" data-category="datasets">
+                    <div class="resource-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="resource-card__title">GLUE Benchmark</h3>
+                    <p class="resource-card__description">
+                        General Language Understanding Evaluation - collection of diverse NLP tasks
+                        for model evaluation.
+                    </p>
+                    <div class="resource-card__tags">
+                        <span class="tag">Benchmark</span>
+                        <span class="tag">Multi-task</span>
+                    </div>
+                    <a href="https://gluebenchmark.com/" target="_blank" class="resource-card__link">
+                        Visit Resource →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Resources Section -->
+    <section class="resources-section" id="learning">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Learning Resources</h2>
+                <p class="section__subtitle">Courses, tutorials, and educational materials</p>
+            </div>
+
+            <div class="resources__grid">
+                <div class="resource-card" data-category="learning">
+                    <div class="resource-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="resource-card__title">Stanford CS224N</h3>
+                    <p class="resource-card__description">
+                        Natural Language Processing with Deep Learning - comprehensive course
+                        covering modern NLP techniques and applications.
+                    </p>
+                    <div class="resource-card__tags">
+                        <span class="tag">Course</span>
+                        <span class="tag">Deep Learning</span>
+                    </div>
+                    <a href="http://web.stanford.edu/class/cs224n/" target="_blank" class="resource-card__link">
+                        Visit Resource →
+                    </a>
+                </div>
+
+                <div class="resource-card" data-category="learning">
+                    <div class="resource-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        </svg>
+                    </div>
+                    <h3 class="resource-card__title">fast.ai NLP Course</h3>
+                    <p class="resource-card__description">
+                        Practical deep learning for NLP - hands-on course focusing on
+                        state-of-the-art techniques and real-world applications.
+                    </p>
+                    <div class="resource-card__tags">
+                        <span class="tag">Practical</span>
+                        <span class="tag">Tutorial</span>
+                    </div>
+                    <a href="https://www.fast.ai/" target="_blank" class="resource-card__link">
+                        Visit Resource →
+                    </a>
+                </div>
+
+                <div class="resource-card" data-category="learning">
+                    <div class="resource-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                            <polyline points="2 17 12 22 22 17"/>
+                            <polyline points="2 12 12 17 22 12"/>
+                        </svg>
+                    </div>
+                    <h3 class="resource-card__title">Papers With Code</h3>
+                    <p class="resource-card__description">
+                        Browse state-of-the-art NLP papers with code implementations,
+                        benchmarks, and reproducible research.
+                    </p>
+                    <div class="resource-card__tags">
+                        <span class="tag">Papers</span>
+                        <span class="tag">Code</span>
+                    </div>
+                    <a href="https://paperswithcode.com/area/natural-language-processing" target="_blank" class="resource-card__link">
+                        Visit Resource →
+                    </a>
+                </div>
+
+                <div class="resource-card" data-category="learning">
+                    <div class="resource-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polygon points="10 8 16 12 10 16 10 8"/>
+                        </svg>
+                    </div>
+                    <h3 class="resource-card__title">DeepLearning.AI NLP</h3>
+                    <p class="resource-card__description">
+                        Natural Language Processing Specialization - comprehensive series covering
+                        sentiment analysis, machine translation, and more.
+                    </p>
+                    <div class="resource-card__tags">
+                        <span class="tag">Specialization</span>
+                        <span class="tag">Coursera</span>
+                    </div>
+                    <a href="https://www.coursera.org/specializations/natural-language-processing" target="_blank" class="resource-card__link">
+                        Visit Resource →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Papers Section -->
+    <section class="resources-section" id="papers">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Key Papers & Publications</h2>
+                <p class="section__subtitle">Foundational and recent breakthrough papers</p>
+            </div>
+
+            <div class="papers__list">
+                <div class="paper-card" data-category="papers">
+                    <div class="paper-card__year">2017</div>
+                    <div class="paper-card__content">
+                        <h3 class="paper-card__title">Attention Is All You Need</h3>
+                        <p class="paper-card__authors">Vaswani et al.</p>
+                        <p class="paper-card__description">
+                            Introduced the Transformer architecture that revolutionized NLP and became
+                            the foundation for modern language models.
+                        </p>
+                        <div class="paper-card__tags">
+                            <span class="tag">Transformers</span>
+                            <span class="tag">Foundational</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paper-card" data-category="papers">
+                    <div class="paper-card__year">2018</div>
+                    <div class="paper-card__content">
+                        <h3 class="paper-card__title">BERT: Pre-training of Deep Bidirectional Transformers</h3>
+                        <p class="paper-card__authors">Devlin et al.</p>
+                        <p class="paper-card__description">
+                            Introduced bidirectional pre-training approach that achieved state-of-the-art
+                            results across multiple NLP tasks.
+                        </p>
+                        <div class="paper-card__tags">
+                            <span class="tag">Pre-training</span>
+                            <span class="tag">Influential</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paper-card" data-category="papers">
+                    <div class="paper-card__year">2020</div>
+                    <div class="paper-card__content">
+                        <h3 class="paper-card__title">Language Models are Few-Shot Learners (GPT-3)</h3>
+                        <p class="paper-card__authors">Brown et al.</p>
+                        <p class="paper-card__description">
+                            Demonstrated remarkable few-shot learning capabilities with 175B parameter
+                            model, pushing boundaries of language understanding.
+                        </p>
+                        <div class="paper-card__tags">
+                            <span class="tag">LLMs</span>
+                            <span class="tag">Few-shot</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resources__links">
+                <a href="https://aclanthology.org/" target="_blank" class="btn btn--secondary">
+                    ACL Anthology
+                </a>
+                <a href="https://arxiv.org/list/cs.CL/recent" target="_blank" class="btn btn--secondary">
+                    arXiv cs.CL
+                </a>
+                <a href="https://scholar.google.com/" target="_blank" class="btn btn--secondary">
+                    Google Scholar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Have a Resource to Share?</h2>
+                <p class="cta__description">
+                    Help build our community knowledge base by suggesting useful resources,
+                    tools, or materials for fellow researchers.
+                </p>
+                <a href="contact.html" class="btn btn--primary btn--large">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__section">
+                    <div class="footer__logo">
+                        <img src="assets/images/ysn-logo.jpg" alt="YSN Logo" class="footer__logo-img">
+                        <div class="footer__logo-text">
+                            <span class="footer__logo-title">NLP@U</span>
+                            <span class="footer__logo-subtitle">Young Scholar Network</span>
+                        </div>
+                    </div>
+                    <p class="footer__description">
+                        Empowering early-career researchers in Natural Language Processing
+                        at Utrecht University, Netherlands.
+                    </p>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="about.html">About YSN</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Connect</h3>
+                    <ul class="footer__links">
+                        <li><a href="contact.html">Join Us</a></li>
+                        <li><a href="mailto:h.mohamamdi@uu.nl">Contact</a></li>
+                        <li><a href="https://www.uu.nl/en" target="_blank">Utrecht University</a></li>
+                        <li><a href="https://github.com/NLP-YSN" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Contact</h3>
+                    <p class="footer__contact">
+                        <strong>Email:</strong><br>
+                        <a href="mailto:h.mohamamdi@uu.nl">h.mohamamdi@uu.nl</a>
+                    </p>
+                    <p class="footer__contact">
+                        <strong>Location:</strong><br>
+                        Utrecht University<br>
+                        Utrecht, Netherlands
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2025 Young Scholar Network - NLP@U Utrecht University. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

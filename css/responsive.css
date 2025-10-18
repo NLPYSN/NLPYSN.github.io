@@ -1,0 +1,375 @@
+/* ================================
+   YSN - Responsive Styles
+   Mobile-first responsive design
+   ================================ */
+
+/* Tablet - Below 992px */
+@media screen and (max-width: 992px) {
+    /* Hero */
+    .hero__container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .hero__image {
+        order: -1;
+    }
+
+    .hero__image-wrapper {
+        max-width: 350px;
+    }
+
+    /* About */
+    .about-mission__grid,
+    .about-utrecht__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Stats */
+    .about-utrecht__stats {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Contact */
+    .contact__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Members */
+    .leadership__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Timeline */
+    .timeline-item {
+        flex-direction: column;
+    }
+
+    .timeline-item::before {
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: auto;
+        bottom: 0;
+    }
+
+    .timeline-item__date {
+        width: 100%;
+    }
+}
+
+/* Mobile - Below 768px */
+@media screen and (max-width: 768px) {
+    :root {
+        --spacing-xxl: 3rem;
+        --spacing-xl: 2.5rem;
+        --spacing-lg: 2rem;
+    }
+
+    /* Navigation */
+    .nav {
+        min-height: 70px;
+    }
+
+    .nav__menu {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: calc(100vh - 70px);
+        background-color: var(--color-white);
+        box-shadow: var(--shadow-lg);
+        transition: right var(--transition-normal);
+        padding: var(--spacing-md);
+        overflow-y: auto;
+    }
+
+    .nav__menu.active {
+        right: 0;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav__item {
+        width: 100%;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .nav__link {
+        display: block;
+        padding: var(--spacing-sm) 0;
+    }
+
+    .nav__toggle {
+        display: flex;
+    }
+
+    .nav__toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .nav__toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav__toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+    /* Hero */
+    .hero {
+        min-height: auto;
+        padding: calc(70px + var(--spacing-lg)) 0 var(--spacing-lg);
+    }
+
+    .hero__buttons {
+        flex-direction: column;
+    }
+
+    .hero__buttons .btn {
+        width: 100%;
+    }
+
+    .hero__scroll {
+        display: none;
+    }
+
+    /* Sections */
+    section {
+        padding: var(--spacing-lg) 0;
+    }
+
+    /* Page Header */
+    .page-header {
+        padding: calc(70px + var(--spacing-lg)) 0 var(--spacing-md);
+    }
+
+    /* Grids */
+    .mission__grid,
+    .highlights__grid,
+    .vision__grid,
+    .benefits__grid,
+    .eligibility__grid,
+    .stats__grid,
+    .stat-card {
+        grid-template-columns: 1fr;
+    }
+
+    /* Events */
+    .events__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Members */
+    .members__grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    /* Resources */
+    .resources__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resource-nav {
+        flex-direction: column;
+    }
+
+    .resource-nav__btn {
+        width: 100%;
+    }
+
+    /* Papers */
+    .paper-card {
+        flex-direction: column;
+    }
+
+    .paper-card__year {
+        width: 100%;
+    }
+
+    /* Goals */
+    .goal {
+        flex-direction: column;
+    }
+
+    .goal__number {
+        align-self: flex-start;
+    }
+
+    /* Footer */
+    .footer__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Stats */
+    .about-utrecht__stats {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Small Mobile - Below 480px */
+@media screen and (max-width: 480px) {
+    :root {
+        --spacing-xl: 2rem;
+        --spacing-lg: 1.5rem;
+        --spacing-md: 1rem;
+    }
+
+    /* Container */
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    /* Navigation */
+    .nav__logo-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav__logo-title {
+        font-size: 1.125rem;
+    }
+
+    .nav__logo-subtitle {
+        font-size: 0.625rem;
+    }
+
+    .nav__menu {
+        width: 80%;
+    }
+
+    /* Typography */
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+
+    /* Hero */
+    .hero__image-wrapper {
+        max-width: 280px;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.9375rem;
+    }
+
+    .btn--large {
+        padding: 0.875rem 1.75rem;
+        font-size: 1rem;
+    }
+
+    /* Stats */
+    .about-utrecht__stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat__number,
+    .stat-card__number {
+        font-size: 2rem;
+    }
+
+    /* Event Cards */
+    .event-card__date {
+        padding: var(--spacing-sm);
+    }
+
+    .event-card__day {
+        font-size: 1.5rem;
+    }
+
+    .event-card__month {
+        font-size: 0.875rem;
+    }
+
+    /* Member Cards */
+    .members__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Research Tags */
+    .research-areas__grid {
+        flex-direction: column;
+    }
+
+    .research-tag {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Goal Numbers */
+    .goal__number {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+
+    .highlight__number {
+        font-size: 2rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .nav__toggle,
+    .hero__scroll,
+    .cta,
+    .footer {
+        display: none;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+    }
+
+    a {
+        text-decoration: underline;
+        color: #000;
+    }
+
+    .page-header {
+        padding-top: 0;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .hero__scroll-icon {
+        animation: none;
+    }
+}
+
+/* Dark Mode Support (Optional - for future implementation) */
+@media (prefers-color-scheme: dark) {
+    /* Currently using light mode only */
+    /* Uncomment below to add dark mode support */
+    /*
+    :root {
+        --color-text: #e0e0e0;
+        --color-text-light: #b0b0b0;
+        --color-white: #1a1a1a;
+        --color-bg-light: #2a2a2a;
+        --color-border: #3a3a3a;
+    }
+    */
+}
