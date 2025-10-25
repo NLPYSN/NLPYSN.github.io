@@ -152,11 +152,11 @@
 
         formMessage.textContent = message;
         formMessage.className = `form__message form__message--${type}`;
-        formMessage.style.display = 'block';
+        formMessage.classList.remove('hidden');
 
         if (type === 'success') {
             setTimeout(() => {
-                formMessage.style.display = 'none';
+                formMessage.classList.add('hidden');
             }, 5000);
         }
     }
