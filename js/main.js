@@ -129,21 +129,41 @@
                 return;
             }
 
-            // Simulate form submission
+            // Submit form to FormSpree
             const submitButton = contactForm.querySelector('button[type="submit"]');
             const originalButtonText = submitButton.textContent;
             submitButton.textContent = 'Sending...';
             submitButton.disabled = true;
 
-            setTimeout(() => {
-                showFormMessage('Thank you for your interest! We will get back to you soon.', 'success');
-                contactForm.reset();
+            // Send to FormSpree endpoint
+            fetch('https://formspree.io/f/mldorqjo', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    showFormMessage('Thank you for your interest! We will get back to you soon.', 'success');
+                    contactForm.reset();
+                } else {
+                    return response.json().then(data => {
+                        if (data.errors) {
+                            showFormMessage(data.errors.map(error => error.message).join(', '), 'error');
+                        } else {
+                            showFormMessage('Oops! There was a problem submitting your form. Please try again.', 'error');
+                        }
+                    });
+                }
+            })
+            .catch(error => {
+                showFormMessage('Oops! There was a problem submitting your form. Please try again.', 'error');
+            })
+            .finally(() => {
                 submitButton.textContent = originalButtonText;
                 submitButton.disabled = false;
-
-                // TODO: Replace with actual form submission API call
-                console.log('Form submitted:', data);
-            }, 1500);
+            });
         });
     }
 
