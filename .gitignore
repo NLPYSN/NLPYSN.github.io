@@ -37,3 +37,18 @@ Temporary Items
 # Backup files
 *.bak
 *.backup
+
+# Presentations and non-website materials
+*.pptx
+*.ppt
+*.key
+NLP@U*
+
+# Keep CLAUDE files and directories out of the repo (already listed but ensure case-insensitive matches)
+CLAUDE.md
+.claude/
+
+# Presentation files (not part of website deployment)
+*.pptx
+Meeitngs/
+Members/
