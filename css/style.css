@@ -357,6 +357,7 @@ section {
     margin-bottom: var(--spacing-sm);
 }
 
+.page-header__subtitle,
 .page-header__description {
     font-size: 1.125rem;
     color: var(--color-text-light);
