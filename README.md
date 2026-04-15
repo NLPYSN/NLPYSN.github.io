@@ -60,7 +60,7 @@ This site is designed to be hosted on GitHub Pages at `https://nlp-ysn.github.io
 
 2. **Add the remote repository:**
    ```bash
-   git remote add origin https://github.com/NLP-YSN/NLP-YSN.github.io.git
+   git remote add origin https://github.com/NLPYSN/NLPYSN.github.io.git
    ```
 
 3. **Push to GitHub:**
@@ -239,7 +239,7 @@ This project is open source and available under the MIT License.
 
 **Young Scholar Network**
 - Email: h.mohamamdi@uu.nl
-- GitHub: [https://github.com/NLP-YSN](https://github.com/NLP-YSN)
+- GitHub: [https://github.com/NLPYSN](https://github.com/NLPYSN)
 - Location: Utrecht University, Netherlands
 
 ## Acknowledgments
