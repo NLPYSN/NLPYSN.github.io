@@ -1,3 +1,8 @@
+---
+permalink: /events/
+redirect_from:
+  - /events.html
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,17 +17,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
 
-    <link rel="icon" type="image/png" href="assets/images/ysn-logo.jpg">
+    <link rel="icon" type="image/png" href="/assets/images/ysn-logo.jpg">
 </head>
 <body>
     <!-- Header / Navigation -->
     <header class="header" id="header">
         <nav class="nav container">
             <div class="nav__logo">
-                <img src="assets/images/ysn-logo.jpg" alt="YSN Logo" class="nav__logo-img">
+                <img src="/assets/images/ysn-logo.jpg" alt="YSN Logo" class="nav__logo-img">
                 <div class="nav__logo-text">
                     <span class="nav__logo-title">NLP@U</span>
                     <span class="nav__logo-subtitle">Young Scholar Network</span>
@@ -31,10 +36,10 @@
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="events.html" class="nav__link">Events</a></li>
-                    <li class="nav__item"><a href="contact.html" class="nav__link nav__link--cta">Join Us</a></li>
+                    <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="/about/" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="/events/" class="nav__link">Events</a></li>
+                    <li class="nav__item"><a href="/contact/" class="nav__link nav__link--cta">Join Us</a></li>
                 </ul>
             </div>
 
@@ -121,11 +126,13 @@
 
             <div class="past-events__timeline">
                 <!-- Meeting #3: Career Paths Inside & Outside Academia -->
-                <div class="timeline-item">
+                <div class="timeline-item" id="career-paths-2026">
                     <div class="timeline-item__date">May 21, 2026</div>
                     <div class="timeline-item__content">
                         <h3 class="timeline-item__title">
-                            NLP@U YSN Meeting &ndash; Career Paths Inside &amp; Outside Academia
+                            <a href="/events/career-paths-2026/" style="color: inherit; text-decoration: none;">
+                                NLP@U YSN Meeting &ndash; Career Paths Inside &amp; Outside Academia
+                            </a>
                         </h3>
                         <p class="timeline-item__description">
                             Join us for a conversation about career paths inside and outside academia
@@ -154,6 +161,7 @@
                         <a href="https://forms.office.com/pages/responsepage.aspx?id=oFgn10akD06gqkv5WkoQ5wt_HqoyR-JGrM231VVozYVUMDBJSzdDSklPWlpZUk0xNUREUjZHS0tORS4u&route=shorturl"
                            target="_blank" rel="noopener noreferrer"
                            class="btn btn--primary mt-1">Register Here</a>
+                        <a href="/events/career-paths-2026/" class="btn btn--primary mt-1" style="margin-left: 0.5rem; background: transparent; color: #1a1a1a; border: 2px solid #1a1a1a;">View Details &rarr;</a>
                         <span class="timeline-item__tag">Career Development</span>
                     </div>
                 </div>
@@ -184,8 +192,8 @@
                             and postdocs working in NLP and Text Mining.
                         </p>
                         <div class="event-images">
-                            <img src="assets/images/meeting2-1.jpg" alt="Career Paths Event 1" class="event-photo">
-                            <img src="assets/images/meeting2-2.jpg" alt="Career Paths Event 2" class="event-photo">
+                            <img src="/assets/images/meeting2-1.jpg" alt="Career Paths Event 1" class="event-photo">
+                            <img src="/assets/images/meeting2-2.jpg" alt="Career Paths Event 2" class="event-photo">
                         </div>
                         <p class="timeline-item__description mt-1">
                             <strong>Location:</strong> Martinus J. Langeveldgebouw, Room E.314<br>
@@ -209,7 +217,7 @@
                             our collaborative community.
                         </p>
                         <div class="event-images">
-                            <img src="assets/images/kickoff-venue.jpg" alt="Utrecht NLP Hub YSN Kick-off Event Venue" class="event-photo">
+                            <img src="/assets/images/kickoff-venue.jpg" alt="Utrecht NLP Hub YSN Kick-off Event Venue" class="event-photo">
                         </div>
                         <p class="timeline-item__description mt-1">
                             <strong>Location:</strong> Martinus J. Langeveldgebouw, E3.14<br>
@@ -231,7 +239,7 @@
                     Join YSN to receive updates about upcoming events and exclusive opportunities
                     for professional development and networking.
                 </p>
-                <a href="contact.html" class="btn btn--primary btn--large">Join the Network</a>
+                <a href="/contact/" class="btn btn--primary btn--large">Join the Network</a>
             </div>
         </div>
     </section>
@@ -242,7 +250,7 @@
             <div class="footer__grid">
                 <div class="footer__section">
                     <div class="footer__logo">
-                        <img src="assets/images/ysn-logo.jpg" alt="YSN Logo" class="footer__logo-img">
+                        <img src="/assets/images/ysn-logo.jpg" alt="YSN Logo" class="footer__logo-img">
                         <div class="footer__logo-text">
                             <span class="footer__logo-title">NLP@U</span>
                             <span class="footer__logo-subtitle">Young Scholar Network</span>
@@ -257,16 +265,16 @@
                 <div class="footer__section">
                     <h3 class="footer__title">Quick Links</h3>
                     <ul class="footer__links">
-                        <li><a href="about.html">About YSN</a></li>
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="contact.html">Join Us</a></li>
+                        <li><a href="/about/">About YSN</a></li>
+                        <li><a href="/events/">Events</a></li>
+                        <li><a href="/contact/">Join Us</a></li>
                     </ul>
                 </div>
 
                 <div class="footer__section">
                     <h3 class="footer__title">Connect</h3>
                     <ul class="footer__links">
-                        <li><a href="contact.html">Join Us</a></li>
+                        <li><a href="/contact/">Join Us</a></li>
                         <li><a href="mailto:h.mohamamdi@uu.nl">Contact</a></li>
                         <li><a href="https://www.uu.nl/en" target="_blank">Utrecht University</a></li>
                         <li><a href="https://github.com/NLPYSN" target="_blank">GitHub</a></li>
@@ -297,6 +305,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

@@ -184,20 +184,19 @@
     // ==========================================
     // Active Page Link Highlight
     // ==========================================
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const currentPath = window.location.pathname;
     const allNavLinks = document.querySelectorAll('.nav__link');
 
-    // Remove all active classes first to prevent conflicts
-    allNavLinks.forEach(link => {
-        link.classList.remove('active');
-    });
+    allNavLinks.forEach(link => link.classList.remove('active'));
 
-    // Add active class to current page link
     allNavLinks.forEach(link => {
         const linkHref = link.getAttribute('href');
-        if (linkHref === currentPage ||
-            (currentPage === '' && linkHref === 'index.html') ||
-            (currentPage === '/' && linkHref === 'index.html')) {
+        if (!linkHref) return;
+        if (linkHref === '/') {
+            if (currentPath === '/' || currentPath === '/index.html') {
+                link.classList.add('active');
+            }
+        } else if (currentPath === linkHref || currentPath.startsWith(linkHref)) {
             link.classList.add('active');
         }
     });

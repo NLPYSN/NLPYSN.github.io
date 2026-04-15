@@ -1,0 +1,11 @@
+title: NLP@U Young Scholar Network
+description: Community for PhD candidates, postdocs, and early-career researchers in NLP at Utrecht University and UMCU.
+url: https://nlpysn.github.io
+
+plugins:
+  - jekyll-redirect-from
+
+exclude:
+  - README.md
+  - YSN.jpg
+  - "*.pptx"
