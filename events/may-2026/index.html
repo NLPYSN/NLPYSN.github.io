@@ -114,6 +114,44 @@ redirect_from:
             font-size: 0.95rem;
             margin-bottom: 1rem;
         }
+
+        @media (max-width: 600px) {
+            .event-detail { padding: 2rem 0 1rem; }
+            .event-detail h2 { margin-top: 1.75rem; font-size: 1.25rem; }
+            .event-detail p, .event-detail li { line-height: 1.6; }
+
+            .event-info-card {
+                padding: 1.25rem;
+                margin-bottom: 1.5rem;
+            }
+            .event-info-card__row {
+                flex-direction: column;
+                gap: 0.15rem;
+                padding: 0.6rem 0;
+            }
+            .event-info-card__label {
+                min-width: 0;
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+                color: #666;
+            }
+            .event-info-card__value { font-size: 0.95rem; }
+
+            .event-program-list { margin: 0.5rem 0 1.5rem; }
+            .event-program-list li {
+                flex-direction: column;
+                gap: 0.1rem;
+                padding: 0.75rem 0;
+            }
+            .event-program-list__time {
+                min-width: 0;
+                font-size: 0.85rem;
+            }
+
+            .event-register { padding: 1.5rem; margin: 1.5rem 0 0.5rem; }
+            .event-hero-meta { font-size: 0.85rem; padding: 0.3rem 0.8rem; }
+        }
     </style>
 </head>
 <body>
